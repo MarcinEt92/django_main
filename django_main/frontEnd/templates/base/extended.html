@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+{% block navBar %}
+    <ul>
+        {% for episode in episodes %}
+            <li><a href="{% url 'tutorial_generic' tutorial_name forloop.counter %}">{{tutorial_name}} {{forloop.counter}}: {{ episode }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block mainFrame %}
+    <p>Frames with websites will appear here...</p>
+{% endblock %}

@@ -1,0 +1,117 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+
+    <link rel="stylesheet" href="{% static 'html_6/index.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Wybierz konfigurację samochodu</h1>
+    </header>
+
+    <main>
+        <article>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <fieldset>
+                        <legend>Construction type</legend>
+                        <div class="radio"><label><input type="radio" name="construction" value="1" checked>Hatchback</label></div>
+                        <div class="radio"><label><input type="radio" name="construction" value="2">Cabriolet</label></div>
+                        <div class="radio"><label><input type="radio" name="construction" value="3">Combi</label></div>
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <label for="engine">Engine Type</label>
+                    <select id="engine">
+                        <option value="d">diesel</option>
+                        <option value="b" selected>benzin</option>
+                        <option value="h">hybrid</option>
+                        <option value="e">electric</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <fieldset>
+                        <legend>Equipment</legend>
+                        <div id="equip-container">
+                            <div class="group">
+                                <div><label><input type="checkbox" name="equipment" value="1" checked disabled id="">Air Conditioniing</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="2" id="">ABS</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="3" id="">Airbags</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="4" id="">leather seats</label></div>
+                            </div>
+
+                            <div class="group">
+                                <div><label><input type="checkbox" name="equipment" value="5" id="">Air Conditioniing</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="6" id="">ABS</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="7" id="">Airbags</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="8" id="">leather seats</label></div>
+                            </div>
+
+                            <div class="group">
+                                <div><label><input type="checkbox" name="equipment" value="9" id="">Air Conditioniing</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="10" id="">ABS</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="11" id="">Airbags</label></div>
+                                <div><label><input type="checkbox" name="equipment" value="12" id="">leather seats</label></div>
+                            </div>
+
+                            <div class="group">
+                                <div><label><input type="checkbox" name="" id="">Air Conditioniing</label></div>
+                                <div><label><input type="checkbox" name="" id="">ABS</label></div>
+                                <div><label><input type="checkbox" name="" id="">Airbags</label></div>
+                                <div><label><input type="checkbox" name="" id="">leather seats</label></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <label for="tree">Tree</label>
+                    <select name="tree" id="tree" multiple size="2">
+                        <option value="lemon">Lemon</option>
+                        <option value="orange">Orange</option>
+                        <option value="pear">Pear</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div><label for="name"><input type="text" name="name" placeholder="name"></label></div>
+                    <div><label for="password"><input type="password" name="password" placeholder="password"></label></div>
+                    <div><label for="search"><input type="search" name="search" placeholder="search"></label></div>
+                    <div><label for="number"><input type="number" name="number" placeholder="number" step="1"></label></div>
+                </div>
+
+                <fieldset>
+                    <legend>Zelent 7 additional inputs</legend>
+                    <div class="row">
+                        <div><label for="email">mail<input type="email" required></label></div>
+                        <div><label for="tel">tel <input type="tel" required></label></div>
+                        <div><label for="date">date <input type="date" min="2019-03-01" required></label></div>
+                        <div><label for="time">time<input type="time" max="19:00"></label></div>
+                        <div><label for="comment">comment</label></div>
+                        <div>Upload Image<label for="image"><input type="file" name="image" accept="image/x-png,image/gif,image/jpeg" multiple></label></div>
+                        <div>Color <label for="col"><input type="color"></label></div>
+                        <div><label for="prog"></label>Progress <progress id="prog" min="1" max="100" value="75"></progress> </div>
+                        <div><label for="met">Meter</label><meter min="0" max="100" title="percent" value="70" low="30" high="70" optimum="75"></meter></div>
+                        <div><label for="url-web">Your website url <input type="url"> </label></div>
+                        <div><input type="hidden" name="token" value="sdf32133sdfw8723"></div>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="clear">
+
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

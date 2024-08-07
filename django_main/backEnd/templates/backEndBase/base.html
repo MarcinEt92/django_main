@@ -1,0 +1,40 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'frontEnd/index.css' %}">
+    <link rel="stylesheet" href="{% static 'cookies/cookies.css' %}">
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <p><a href="{% url 'php_tutorial' %}">PHP/Dj</a></p>
+        <p><a href="{% url 'to_do_list' %}">ToDo List</a></p>
+    </header>
+
+    <div class="container">
+        <nav>
+            {% block navBar %}
+            {% endblock %}
+            <ul>
+                <li><a href="{% url 'index_page' %}">Back To Index Page</a></li>
+            </ul>
+        </nav>
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+    </div>
+    
+</body>
+</html>

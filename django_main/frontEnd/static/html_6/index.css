@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #29201B;
+    color: #efefef;
+    font-family:'Lucida Grande', 'Lucida Sans Regular';
+    font-size: 17px;
+}
+
+form {
+    width: 500px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 400;
+    color: #FA7C00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+fieldset {
+    padding: 5px 10px;
+}
+
+.row {
+    margin: 20px 10px;
+}
+
+#equip-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 180px;
+    flex-wrap: wrap;
+}
+

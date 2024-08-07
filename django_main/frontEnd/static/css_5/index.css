@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 400;
+    color: #39a5f1;
+    margin: 20px 0px;
+}
+
+h1.logo {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 20px 10px;
+}
+
+figure.overflow-hidden {
+    overflow: hidden;
+}
+
+
+.categories {
+    margin: 20px auto;
+    width: 1000px;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 90px;
+    height: 110px;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* animations */
+.photo1 {
+    /* also transform or opacity detached can be used instead of all */
+    transition: all 0.4s ease-in-out;
+}
+
+.photo1:hover {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+.photo2 {
+    transition: transform 0.4s linear;
+}
+
+.photo2:hover {
+    transform: scale(0.95) rotate(5deg) skew(2deg, 0deg);
+}
+
+
+.overlay {
+    position: relative;
+    width: 100%;
+}
+
+.overlay .link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #111;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.overlay:hover .link {
+    opacity: 0.8;
+}
+
+.overlay .link p {
+    margin-top: 15px;
+}
+
+/* photo 4 */
+
+.overlay-t {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-t .link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #27a38d;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.overlay-t:hover .link {
+    opacity: 0.9;
+}
+
+.big-icon {
+    font-size: 30px;
+}
+
+span.icon-t {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+span.icon-t i {
+    font-size: 80px;
+}
+
+.photo5 {
+    width: 100%;
+    height: 100%;
+}
+
+.photo5 img {
+    transition: transform 0.4s linear;
+}
+
+.photo5:hover img {
+    transform: scale(1.15);
+}
+
+.photo6 {
+    width: 100%;
+    height: 100%;
+}
+
+.photo6 img {
+    transition: transform 0.4s linear;
+}
+
+.photo6:hover img {
+    transform: scale(1.15) rotate(-0deg);
+}

@@ -1,0 +1,52 @@
+body {
+    background-color: brown;
+}
+
+#container {
+    background-color: antiquewhite;
+    width: 1000px;
+
+    /* centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    background-color:black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+
+#nav {
+    background-color: lightgray;
+    float: left;
+    width: 120px;
+    min-height: 620px;
+    padding: 10px;
+
+}
+
+#content {
+    width: 640px;
+    background-color: chocolate;
+    float: left;
+    padding: 20px;
+    min-height: 600px;
+}
+
+#ad {
+    background-color: lightgray;
+    float: left;
+    width: 160px;
+    min-height: 620px;
+    padding: 10px;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    clear: both;
+    padding: 20px;
+    text-align: center;
+}

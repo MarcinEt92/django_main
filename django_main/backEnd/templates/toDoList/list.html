@@ -1,0 +1,17 @@
+{% extends 'toDoList/base.html' %}
+
+
+{% block list %}
+    {% for item in list.item_set.all %}
+        <p class="line-height-200">{{ forloop.counter }}. {{ item.text }}</p>
+    {% endfor %}
+{% endblock %}
+
+{% block form_action %}
+    {% url 'specific_list' list.id %}
+{% endblock %}
+
+{% block new_list_link %}
+    <p><a href="{% url 'to_do_list' %}">Or Create New List</a></p>
+{% endblock %}
+

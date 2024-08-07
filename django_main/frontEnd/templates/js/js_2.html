@@ -1,0 +1,62 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'js_2/index.css' %}">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    </style>
+
+    <script src="{% static 'js_2/slider.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                Slider with flexible position:
+            </div>
+            <main>
+                <div class="slider-container">
+                    <div class="slider-bar">
+                        <div class="slides" id="slides-pos">
+                            <div><img src="{% static 'js_2/img/1.png' %}" alt="slide"></div>
+                            <div><img src="{% static 'js_2/img/2.png' %}" alt="slide"></div>
+                            <div><img src="{% static 'js_2/img/3.png' %}" alt="slide"></div>
+                            <div><img src="{% static 'js_2/img/4.png' %}" alt="slide"></div>
+                            <div><img src="{% static 'js_2/img/5.png' %}" alt="slide"></div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="button" id="prev-pos"><a href="#">Prev</a></div>
+                        <div class="button" id="next-pos"><a href="#">Next</a></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                Slider with flexible opacity:
+            </div>
+            <main>
+                <div class="slider-container">
+                    <div class="slider-bar-op">
+                        <div class="slides-op" id="slides-op">
+                            <div class="slide-op" id="img1"><img src="{% static 'js_2/img/1.png' %}" alt="slide"></div>
+                            <div class="slide-op" id="img2"><img src="{% static 'js_2/img/2.png' %}" alt="slide"></div>
+                            <div class="slide-op" id="img3"><img src="{% static 'js_2/img/3.png' %}" alt="slide"></div>
+                            <div class="slide-op" id="img4"><img src="{% static 'js_2/img/4.png' %}" alt="slide"></div>
+                            <div class="slide-op" id="img5"><img src="{% static 'js_2/img/5.png' %}" alt="slide"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

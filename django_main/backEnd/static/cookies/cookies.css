@@ -1,0 +1,34 @@
+
+label.cookie {
+    width: 150px;
+    display: inline-block;
+}
+
+.line-height-200 {
+    line-height: 200%;
+}
+
+.width-150 {
+    width: 150px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    width: 150px;
+}
+
+#order-cookie {
+    margin: 20px 0px;
+    width: 150px;
+    height: 25px;
+}
+
+#cookie-form {
+    width: 400px;
+}

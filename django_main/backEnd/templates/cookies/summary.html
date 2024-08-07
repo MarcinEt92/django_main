@@ -1,0 +1,32 @@
+{% extends 'backEndBase/extended.html' %}
+
+
+
+{% block main %}
+    <h3 class="line-height-200">Cookies Summary:</h3>
+
+
+    <table class="line-height-200">
+        <tr>
+            <th>Name</th>
+            <th>Items</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Buns</td>
+            <td>{{ order.buns }}</td>
+            <td>{{ buns }}$/item</td>
+        </tr>
+        <tr>
+            <td>Donuts</td>
+            <td>{{ order.donuts }}</td>
+            <td>{{ donuts }}$/item</td>
+        </tr>
+        <tr>
+            <th>Final Price</th>
+            <th colspan="2">{{ final_price }}$</th>
+        </tr>
+    </table>
+    
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'frontEnd/index.css' %}">
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="margin-center">Welcome!</div>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><strong>Tutorial Links:</strong></li>
+                <li><a href="{% url 'frontend_index' %}">Front End Examples</a></li>
+                <li><a href="{% url 'backend_index' %}">Back End Examples</a></li>
+            </ul>
+        </nav>
+        <main>
+
+        </main>
+    </div>
+
+</body>
+</html>

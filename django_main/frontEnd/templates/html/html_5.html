@@ -1,0 +1,135 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filozofia</title>
+
+    <link rel="stylesheet" href="{% static 'html_5/index.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext.css">
+    <link rel="stylesheet" href="{% static 'html_3/fontello/css/fontello.css' %}">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Philosophia Blog</h1>
+
+        <nav id="top-nav">
+            <ul class="menu">
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Pierwszy raz tutaj?</a></li>
+                <li><a href="#">Dlaczego filozofia?</a></li>
+                <li><a href="#">O autorze</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <div class="categories">
+                    <header>
+                        <h1>Witaj w świecie filozofii</h1>
+                        <p>Czy jestes fanem filozofii. Lubisz świat idei? Ciekawią Cię
+                            sposoby interpretowania świata przez ludzi?
+                        </p>
+                    </header>
+
+                    <div class="author">
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/alan-watts.jpg' %} " alt="aw"></a>
+                            <figcaption>Alan Watts</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/de-mello.jpg' %} " alt="aw"></a>
+                            <figcaption>De Mello</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/emerson.jpg' %} " alt="aw"></a>
+                            <figcaption>Emerson</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/nietzsche.jpg' %} " alt="aw"></a>
+                            <figcaption>Nietzshe</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/platon.jpg' %} " alt="aw"></a>
+                            <figcaption>Platon</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#"><img src="{% static 'html_5/img/kant.jpg' %} " alt="aw"></a>
+                            <figcaption>Kant</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="newest">
+                <div class="entries">
+                    <header>
+                        <h1>Najnowsze wpisy</h1>
+                        <p>Tutaj znajdą się najnowsze wpisy dotyczące filozofii</p>
+                    </header>
+
+                    <div class="entry">
+                        <div class="entryimg">
+                            <img src="{% static 'html_5/img/de-mello.jpg' %}" alt="adm">
+                        </div>
+                        <div class="entrytxt">
+                            <h2>Anthony De Mello - posukiwanie akceptacji</h2>
+                            <p>Ktoś kiedyś pieknie to ujął: życie to coś co przydarza się nam
+                                gdy jesteśmy zajęci układaniem planów
+                            </p>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="entryimg">
+                            <img src="{% static 'html_5/img/de-mello.jpg' %}" alt="adm">
+                        </div>
+                        <div class="entrytxt">
+                            <h2>Anthony De Mello - posukiwanie akceptacji</h2>
+                            <p>Ktoś kiedyś pieknie to ujął: życie to coś co przydarza się nam
+                                gdy jesteśmy zajęci układaniem planów
+                            </p>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <div class="entryimg">
+                            <img src="{% static 'html_5/img/de-mello.jpg' %}" alt="adm">
+                        </div>
+                        <div class="entrytxt">
+                            <h2>Anthony De Mello - posukiwanie akceptacji</h2>
+                            <p>Ktoś kiedyś pieknie to ujął: życie to coś co przydarza się nam
+                                gdy jesteśmy zajęci układaniem planów
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="contact">
+                    <header>
+                        <h1>Kontakt z autorem</h1>
+                        <p>Kontakt z autorem</p>
+                    </header>
+                    <a href="#" class="blue-button">Kontakt</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="icons">
+            <div class="icon"><i class="icon-facebook"></i></div>
+            <div class="icon"><i class="icon-youtube"></i></div>
+            <div class="icon"><i class="icon-twitter"></i></div>
+            <div class="icon"><i class="icon-gplus"></i></div>
+        </div>
+        <div class="info">
+            Wszelkie prawa zastrzeżone
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: azure;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: burlywood;
+}
+
+a:hover {
+    color: cadetblue;
+}

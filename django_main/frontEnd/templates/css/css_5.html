@@ -1,0 +1,86 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miejsca na ziemi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css_5/index.css' %}">
+
+    <!-- Fontello -->
+    <link rel="stylesheet" href="{% static 'html_3/fontello/css/fontello.css' %}">
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Piękne miejsca na ziemi</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <div class="categories">
+                    <div class="author">
+                        <figure>
+                            <div class="photo1"><a href="#"><img src="{% static 'css_5/img/01.jpg' %} " alt="aw"></a></div>
+                            <figcaption>Klasztor Taktsang</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="photo2"><a href="#"><img src="{% static 'css_5/img/02.jpg' %} " alt="aw"></a></div>
+                            <figcaption>Las Arashiyama</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="photo3">
+                                <div class="overlay">
+                                    <a href="#"><img src="{% static 'css_5/img/03.jpg' %} " alt="aw"></a>
+                                    <a href="#" class="link"><p>Rok zalozenia 1928, pow. 145 km<sup>2</sup></p></a>
+                                </div>
+                            </div>
+                            <figcaption>Bryce Canyon</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="photo4">
+                                <div class="overlay-t">
+                                    <a href="#"><img src="{% static 'css_5/img/04.jpg' %} " alt="aw"></a>
+                                    <a href="#" class="link">
+                                        <span class="icon-t">
+                                            <i class="icon-youtube"></i>
+                                            <p>Zobacz na yt</p>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <figcaption>Taj Mahal</figcaption>
+                        </figure>
+                        <figure class="overflow-hidden">
+                            <div class="photo5 "><a href="#"><img src="{% static 'css_5/img/05.jpg' %} " alt="aw"></a></div>
+                            <figcaption>Serengeti</figcaption>
+                        </figure>
+                        <figure class="overflow-hidden">
+                            <div class="photo6"><a href="#"><img src="{% static 'css_5/img/06.jpg' %} " alt="aw"></a></div>
+                            <figcaption>Mu Cang Chai</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="icons">
+            <div class="icon"><i class="icon-facebook"></i></div>
+            <div class="icon"><i class="icon-youtube"></i></div>
+            <div class="icon"><i class="icon-twitter"></i></div>
+            <div class="icon"><i class="icon-gplus"></i></div>
+        </div>
+        <div class="info">
+            Wszelkie prawa zastrzeżone
+        </div>
+    </footer>
+</body>
+</html>

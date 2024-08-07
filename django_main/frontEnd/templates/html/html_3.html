@@ -1,0 +1,56 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'html_3/index.css' %}">
+    <link rel="stylesheet" href="{% static 'html_3/fontello/css/fontello.css' %}">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+    </style>
+
+    <script src="{% static 'html_3/timer.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div id="name">Jan Kowalski</div>
+                <div id="time">20:34:40</div>
+            </div>
+            <div class="main">
+                <div class="half group">
+                    <div class="item item-blue">
+                        <a href="portfolio.html"><i class="icon-user"></i><br>kim jestem</a></div>
+                    <div class="item item-blue"><i class="icon-keyboard"></i><br>oferta</div>
+                    <div class="item item-gray"><i class="icon-child"></i><br>wykształcenie</div>
+                    <div class="item item-green"><i class="icon-bell"></i><br>kontakt</div>
+                </div>
+                <div class="half about-me">
+                    <p>Information about myself, date of birth etc</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book. It has survived
+                        not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with
+                        the release of Letraset sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="links">
+                <div class="linus">Linus</div>
+                <div class="yt icon"><a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a></div>
+                <div class="fb icon"><a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a></div>
+                <div class="gg icon"><a href="https://google.com" target="_blank"><i class="icon-gplus"></i></a></div>
+                <div class="tw icon"><a href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a></div>
+            </div>
+            <footer>2023 &copy; Jan Kowalski</footer>
+        </div>
+    </div>
+</body>
+</html>

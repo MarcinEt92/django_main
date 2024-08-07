@@ -1,0 +1,22 @@
+{% extends 'backEndBase/base.html' %}
+
+
+{% block main %}
+
+    {% block list %}
+    {% endblock %}
+
+    <p class="line-height-200 margin-top-10">Type Thing To Do:</p>
+    <form action="{% block form_action %}{% endblock %}" method="post">
+        {% csrf_token %}
+        {{ form.text }}
+        <input type="submit" value="send">
+        {% if form.errors %}
+            {{ form.text.errors }}
+        {% endif %}
+    </form>
+
+    {% block new_list_link %}
+    {% endblock %}
+
+{% endblock %}

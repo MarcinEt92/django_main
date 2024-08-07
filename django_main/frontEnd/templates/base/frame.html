@@ -1,0 +1,5 @@
+{% extends 'base/extended.html' %}
+
+{% block mainFrame %}
+    <iframe src="{% url 'frames' tutorial_name tutorial_id %}"></iframe>
+{% endblock %}

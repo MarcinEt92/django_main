@@ -1,0 +1,4 @@
+.idea/
+venv/
+django_main/*/__pycache__
+django_main/*/*/__pycache__
