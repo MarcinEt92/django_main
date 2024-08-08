@@ -17,7 +17,7 @@ def new_order_factory(db):
 
 @pytest.fixture
 def order_1(db, new_order_factory):
-    return new_order_factory(3, 4)
+    return new_order_factory(3, 5)
 
 
 @pytest.fixture
