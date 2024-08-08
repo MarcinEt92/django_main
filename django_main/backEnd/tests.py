@@ -1,6 +1,3 @@
-from django.test import TestCase
-
-# Create your tests here.
 import pytest
 from .models import Order
 from django.contrib.auth.models import User
